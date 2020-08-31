@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 import javax.validation.constraints.NotNull;
 
-import com.github.uniliva.commonsutils.dto.BaseDto;
+import com.github.uniliva.commonsutils.dto.BaseDTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +17,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ProdutoDTO extends BaseDto {
+public class ProdutoDTO extends BaseDTO {
 	private static final long serialVersionUID = 1L;
 
 	private Long codigo;

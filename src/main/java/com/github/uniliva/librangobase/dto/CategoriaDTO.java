@@ -2,7 +2,7 @@ package com.github.uniliva.librangobase.dto;
 
 import javax.validation.constraints.NotNull;
 
-import com.github.uniliva.commonsutils.dto.BaseDto;
+import com.github.uniliva.commonsutils.dto.BaseDTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +15,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class CategoriaDTO extends BaseDto {
+public class CategoriaDTO extends BaseDTO {
 	private static final long serialVersionUID = 1L;
 
 	private Long codigo;
