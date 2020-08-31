@@ -20,4 +20,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'deploy'
-    options: '--settings -s $(System.DefaultWorkingDirectory)/lib-rango-base/settings.xml  -DazureServerId=$(azure_server_id) -DazureUser=$(azure_user) -DazurePass=$(azure_pass)'
+    options: '--settings $(System.DefaultWorkingDirectory)/lib-rango-base/settings.xml  -DazureServerId=$(azure_server_id) -DazureUser=$(azure_user) -DazurePass=$(azure_pass)'
