@@ -4,9 +4,9 @@
                               https://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>${azure_server_id}</id>
-      <username>${azure_user}</username>
-      <password>${azure_pass}</password>
+      <id>${env.azure_server_id}</id>
+      <username>${env.azure_user}</username>
+      <password>${env.azure_pass}</password>
     </server>
   </servers>
 </settings>
