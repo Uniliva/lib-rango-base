@@ -76,8 +76,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>uniliva-ap</id>
-			<url>https://pkgs.dev.azure.com/uni-dev/_packaging/uniliva-ap/maven/v1</url>
+			<id>rango-feed</id>
+			<url>https://pkgs.dev.azure.com/uni-dev/lu-estudos/_packaging/rango-feed/maven/v1</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -88,7 +88,7 @@
 	</distributionManagement>
 
 	<build>
-	<pluginManagement>
+		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
