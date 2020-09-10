@@ -21,4 +21,4 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'deploy'
     mavenAuthenticateFeed: true
-    options: '--settings $(System.DefaultWorkingDirectory)/settings.xml  -DazureServerId=$(azure_feed_id) -DazureUser=$(azure_user) -DazurePass=$(azure_pass)'
+    options: '--settings $(System.DefaultWorkingDirectory)/settings.xml  -Dazure.feed.id=$(azure_feed_id) -Dazure.user=$(azure_user) -Dazure.pass=$(azure_pass)'
