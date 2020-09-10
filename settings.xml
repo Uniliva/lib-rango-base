@@ -4,9 +4,9 @@
                               https://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>${azure_server_id}</id>
-      <username>${azure_user}</username>
-      <password>${azure_pass}</password>
+      <id>rango-feed</id>
+      <username>uni-dev</username>
+      <password>xuzb4oq4cmpdage66b7twqcguol2ddqnzgk3knjs4kmzxadzjwiq</password>
     </server>
   </servers>
 </settings>
