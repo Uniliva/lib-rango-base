@@ -1,10 +1,6 @@
-package com.github.uniliva.librangobase.dto;
+package com.github.uniliva.librangobase.entity;
 
 import java.math.BigDecimal;
-
-import javax.validation.constraints.NotNull;
-
-import com.github.uniliva.commonsutils.dto.BaseDTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,23 +13,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ProdutoDTO extends BaseDTO {
-	private static final long serialVersionUID = 1L;
-
+public class ProdutoEntity {
+	
 	private Long codigo;
-
-	@NotNull
 	private String nome;
-
-	@NotNull
 	private String descricao;
-
-	@NotNull
-	private CategoriaDTO categoria;
-
-	@NotNull
 	private BigDecimal valor;
-	
-	
+	private Integer codCategoria;
 
 }
