@@ -6,7 +6,7 @@ import com.github.uniliva.librangobase.dto.PedidoDTO;
 import com.github.uniliva.librangobase.entity.RegistroPedidoEntity;
 
 @Component
-public class PedidoMapper {
+public class RegistroPedidoMapper {
 	
 	public RegistroPedidoEntity mappear(PedidoDTO pedido) {
 		RegistroPedidoEntity entity = new RegistroPedidoEntity();
