@@ -1,5 +1,5 @@
 package com.github.uniliva.librangobase.enums;
-
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import lombok.AllArgsConstructor;
@@ -14,5 +14,9 @@ public enum SexoEnum {
 	@JsonValue
 	private Integer codigo;
 	private String nome;
+	
+	public static SexoEnum parse(final Integer codigo) {
+		return Arrays.stream(values()).filter(e -> e.codigo.equals(codigo)).findFirst().orElse(null);
+	}
 
 }

@@ -6,6 +6,8 @@ import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.github.uniliva.commonsutils.dto.BaseDTO;
 import com.github.uniliva.librangobase.enums.StatusPedidoEnum;
 
@@ -20,6 +22,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@JsonInclude(Include.NON_NULL)
 public class PedidoDTO extends BaseDTO {
 	private static final long serialVersionUID = 1L;
 	private Long codigo;

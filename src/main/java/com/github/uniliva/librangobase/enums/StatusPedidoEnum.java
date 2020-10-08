@@ -1,5 +1,7 @@
 package com.github.uniliva.librangobase.enums;
 
+import java.util.Arrays;
+
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import lombok.AllArgsConstructor;
@@ -15,4 +17,8 @@ public enum StatusPedidoEnum {
 	@JsonValue
 	private Integer codigo;
 	private String descricao;
+	
+	public static StatusPedidoEnum parse(final Integer codigo) {
+		return Arrays.stream(values()).filter(e -> e.codigo.equals(codigo)).findFirst().orElse(null);
+	}
 }
