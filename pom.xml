@@ -6,7 +6,7 @@
 
 	<groupId>com.github.uniliva</groupId>
 	<artifactId>lib-rango-base</artifactId>
-	<version>0.4.0</version>
+	<version>0.4.1</version>
 
 	<packaging>jar</packaging>
 
